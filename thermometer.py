@@ -5,6 +5,5 @@ pixels = neopixel.NeoPixel(board.D18, 20)
 
 temp= 97.56
 
-def thermometer ((
-for i in range (int(temp) - 90):
-    pixels[i] = (10,0,0)))
+def thermometer (( for i in range (int(temp) - 90):
+                    pixels[i] = (10,0,0)))
