@@ -15,10 +15,8 @@ def off ():
 
 for i in range (10):
     off ()
-    randnum = random.randint (90,110)
+    randnum = round(random.uniform(90, 110), 2)
     temp = (randnum)
     print (randnum)
     thermometer (temp)
     time.sleep (1)
-
-#prints the ten randnums but doesnt change the lights
