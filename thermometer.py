@@ -2,6 +2,10 @@ import board
 import neopixel
 import time
 import random
+from sensor_T import *
+
+sT = sensor_T(None)
+T = sT.read()
 
 pixels = neopixel.NeoPixel(board.D18, 20)
 
@@ -22,5 +26,10 @@ def test ():
         thermometer (temp)
         time.sleep (1)
 
-test ()
+def run ():
+    while true:
+        thermometer (T)
+        time.sleep (1)
+
+run ()
 off ()
